@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>INNFood | {% block title %}{% endblock %}</title>
+    {% load static %} {% block head %}{% endblock %}
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/e92465a09c.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="{% static 'core/img/iconografia.png' %}">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'core/css/estiloFooter.css' %}" type="text/css" media="all">
+    <link rel="stylesheet" type="text/css" href="{% static 'core/css/estilos.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'core/css/estiloHeader.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/estiloResponsive.css' %}" type="text/css" media="all">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <!--Header -->
+    <header>
+        <nav>
+            <section class="contenedor_header nav">
+                <div class="hamburger">
+                    <i class='bx bx-menu'></i>
+                </div>
+                <div class="logo">
+                    <img src="{% static 'core/img/iconografia.png' %}" alt="">
+                </div>
+                <div class="enlaces-header">
+                    <a href="{% url 'home' %}">Home</a>
+                    <a href="{% url 'about' %}">Quiénes somos</a>
+                    <a href="{% url 'products' %}">productos</a>
+                    <a href="{% url 'blog' %}">Blog</a>
+                    <a href="{% url 'contacto' %}">Contacto</a>
+                </div>
+                <div class="logo">
+                    <img src="{% static 'core/img/logoSabana.png' %}" alt="">
+                </div>
+
+            </section>
+        </nav>
+    </header>
+    <script src="{% static 'js/main.js'%}"></script>
+    <!--Content ============================================================================================== -->
+    {% block content %}{% endblock %}
+    <!--Footer ================================================================================================-->
+    <footer>
+        <fieldset class="field_footer">
+            <section class="footer">
+                <div class="in-flex_FO">
+                    <br><br>
+                    <img class="iconos2" src="{% static 'core/img/infood.png' %}" alt="" width="400px" height="200px">
+                </div>
+                <div class="in-flex_FO">
+                    <p class="pfooter">info@innfood.co</p>
+                    <p class="pfooter">Campus del Puente del Común, Km. 7, Autopista Norte de Bogotá. Chía, Cundinamarca, Colombia.</p>
+                    <p class="pfooter">©INNFood</p>
+                    <p class="pfooter">TODOS LOS DERECHOS RESERVADOS.</p>
+                    <p class="pfooter">POLITICAS DE PRIVACIDAD</p>
+                    <div id="social">
+                        <a class="linkedBtn smGlobalBtn" href="#"></a>
+                        <a class="instagramBtn smGlobalBtn" href="#"></a>
+                        <a class="youtubeBtn smGlobalBtn" href="#"></a>
+                    </div>
+                </div>
+                <div class="in-flex_FO">
+                    <img class="iconos" src="{% static 'core/img/iconografia.png' %}" alt="" width="300px" height="300px">
+                </div>
+            </section>
+        </fieldset>
+    </footer>
+    <!-- Bot -->
+    <script type="text/javascript">
+        (function() {
+            var ldk = document.createElement('script');
+            ldk.type = 'text/javascript';
+            ldk.async = true;
+            ldk.src = 'https://s.cliengo.com/weboptimizer/607c60875f2722002a8732ef/607c60895f2722002a8732f5.js?platform=registration';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ldk, s);
+        })();
+    </script>
+
+</body>
+
+</html>

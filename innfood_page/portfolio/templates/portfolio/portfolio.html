@@ -1,0 +1,68 @@
+{% extends 'core/base.html' %} {% block title %}Productos{% endblock %}{% load static %}{% block head %}
+
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'core/css/estiloProducts.css' %}">
+</head>
+{% endblock %} {% block content %}
+<div class='productos'>
+    <!--Gran Contenedor-->
+    <div class="fullProducts">
+        <!--Contenedor-->
+        <div class="containerProductos">
+            <!--Producto-->
+            {% for project in projects %}
+            <div class="productP">
+                <!--tarjeta-->
+                <div class="product-card">
+                    <!--Nombre Producto-->
+                    <h2 class="nameProduct">{{project.title}}</h2>
+                    <!--Botón-->
+                    <a class="popup-btnProduct">ver más</a>
+                    <!--Imágen -->
+                    <img class="imgProduct" src="{{project.image.url}}" alt="">
+                </div>
+
+                <div class="popup-view">
+                    <div class="popup-card">
+                        <a><i class="fas fa-times close-btn"></i></a>
+                        <div class="imgProduct">
+                            <img src="{{project.image.url}}" alt="">
+                        </div>
+
+                        <div class="infoProduct">
+                            <h2>{{project.title}}<br></h2>
+                            <p>{{project.description}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>{% endfor %}
+        </div>
+    </div>
+    <!-- JS Productos -->
+    <script type="text/javascript">
+        var popupViews = document.querySelectorAll('.popup-view');
+        var popupBtns = document.querySelectorAll('.popup-btnProduct');
+        var closeBtns = document.querySelectorAll('.close-btn');
+
+        //for popup-btn
+        var popup = function(popupClick) {
+            popupViews[popupClick].classList.add('active');
+        }
+
+        popupBtns.forEach((popupBtn, i) => {
+            popupBtn.addEventListener("click", () => {
+                popup(i);
+            });
+        });
+
+        //js for close btn
+        closeBtns.forEach((CloseBtn) => {
+            CloseBtn.addEventListener("click", () => {
+                popupViews.forEach((popupView) => {
+                    popupView.classList.remove('active');
+                });
+            });
+        });
+    </script>
+</div>
+{% endblock %}

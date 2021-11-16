@@ -1,0 +1,59 @@
+{% extends 'core/base.html' %}{% block title %}home{% endblock %} {% block content %} {% load static %}
+
+<main class="container_hero">
+    <section class="container">
+        <div class="container_1">
+            <div class="contaboutif">
+                <h2 class="aboutif">SOBRE INNFood</h2>
+                <p class="paboutif">Diseñamos y desarrollamos ingredientes funcionales, científicamente comprobados, de origen natural, que contribuyen a mejorar la salud de nuestros consumidores y así a la buena alimentación mundial.</p>
+                <a href="{% url 'about' %}"><button type="submit" class="aboutifbtt" onclick="">Quienes somos</button></a>
+            </div>
+            <div class="contiflogo">
+                <img class="iflogo" src="{% static 'core/img/iflogo.jpg' %}" width="600" height="300">
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="container_2">
+            <div class="contenedor2">
+                <h1 class="h1ct2">SABÍAS QUE...</h1>
+                <p class="pct2">
+                    Los probióticos son microorganismos benéficos que deben colonizar tu intestino a una concentración específica.
+                    <br><br> En INNFood te tenemos la solución, aportamos bienestar y salud con microorganismos en polvo que sí son probióticos.
+                </p>
+                <iframe class="vct2" src="https://www.youtube.com/embed/QbXcpuVxhJE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p class="p1ct2">
+                    "Nuestro compromiso va más allá de la etiqueta" - María Ximena Quintinilla.
+                </p>
+                <br>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="container_3">
+            <div class="contenedor3">
+                <h1 class="h1ct3">BENEFICIOS DE NUESTROS PRODUCTOS</h1>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="container_4">
+            <div class="ctpr1">
+                <img class="img1ct4" src="{% static 'core/img/produc.jpg' %}">
+            </div>
+            <div class="ct4">
+                <h1 class="h1ct4">RESPALDO CIENTÍFICO</h1><br>
+                <ul class="ulct4">
+                    <li>Ingredientes funcionales</li>
+                    <li>Técnicas de nanoencapsulamiento</li>
+                    <li>Desarrollo de productos a la medida</li>
+                </ul>
+                <a href="{% url 'blog' %}"><button class="bttct4" type="button">BLOG</button></a>
+            </div>
+            <div class="ct4pr3">
+                <img class="img2ct4" src="{% static 'core/img/lab.jpg' %}">
+            </div><br>
+        </div>
+    </section>
+</main>
+{% endblock %}

@@ -1,0 +1,58 @@
+{% extends 'core/base.html' %} {% block title %}Blog{% endblock %} {% load static %}{% load static %}{% block head %}
+
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'core/css/estiloEntradas.css' %}">
+</head>
+{% endblock %} {% block content %}
+
+<body class="container_body_blog">
+    <article id="estiloEntrada">
+        <main id="site-main">
+            <div class="grid">
+                <!--Sección de entradas-->
+                <div id="background">
+                    <div class="posts">
+                        {% for blog in blogs %}
+                        <!--Entrada de blog -->
+                        <br><br>
+                        <div class="grid-item">
+                            <div class="post">
+                                <div class="entrada">
+                                    <div class="post-thumb">
+                                        <img src="{{blog.image.url}}" class="img-fluid" />
+                                    </div>
+                                    <div class="post-content">
+                                        <div class="data">
+                                            <div class="iconoUser">
+                                                <i class="fas fa-user-circle" style="font-size: 150%;"></i>
+                                            </div>
+                                            <div class="info">
+                                                <p class="estiloMedio"> {{blog.autor}} </p>
+                                                <p class="estiloMedio"> {{blog.created}} </p>
+                                            </div>
+                                        </div><br>
+                                        <p class="blog_tittle"><a href="{{blog.id}}">{{blog.title}}</a></p>
+                                        <div class="viewsComments">
+                                            <div class="infoViews">
+                                                <hr class="separator">
+                                                <p class="estiloMedio">
+                                                    <span><i class="fas fa-eye"></i> &nbsp;&nbsp; </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <i class="fas fa-heart" id="iconoCorazon"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--.Sección de entradas-->
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </main>
+    </article>
+</body>
+
+{% endblock %}

@@ -1,0 +1,128 @@
+{% extends 'core/base.html' %}{% block title %}Acerca de nosotros{% endblock %} {% load static %}{% block head %}
+
+<!-- <link rel="stylesheet" type="text/css" href="{% static 'core/css/estiloaboutus.css' %}" type="text/css" media="all"> -->
+<link rel="stylesheet" href="{% static 'core/css/estiloResponsive.css' %}" type="text/css" media="all">
+<link rel="stylesheet" type="text/css" href="{% static 'core/css/estiloTarjeta.css' %}">{% endblock %} {% block content %}
+<!--Inicio página-->
+<main class="main-container-about">
+
+    <section class="home">
+        <div class="in-flex">
+            <p4>NUESTRO EQUIPO</p4>
+            <p class="paboutifab1"> Somos un equipo de personas que desde la Industria y la Academia agregamos valor y funcionalidad a tus productos alimenticios. Te presentamos nuestro equipo.</p>
+        </div>
+    </section>
+    <!--Teams cards-->
+    <section class="cards">
+        <div id="cards">
+            <div class="grid">
+                <!--Tarjeta 1-->
+                <div class="grid-item">
+                    <div class="card">
+                        <img class="card-img" src="{% static 'core/img/maXimena.png'%}" alt="Maria Ximena" />
+                        <div class="card-content">
+                            <h1 id="cardHeader" class="card-header">María Ximena Quintanilla</h1>
+                            <p id="cardp" class="card-text">Profesora investigadora de la Universidad de La Sabana. Ingeniera de Producción Agroindustrial y Dra. En Ciencias en Alimentos. Encargada del diseño de nuestros aditivos y de garantizar la funcionalidad de lo que declaramos
+                                para cada uno de nuestros Claims. <br><br><br><br><br><br><br></p>
+                            <!--<button class="card-btn">
+                               Visitar <span>&rarr;</span>
+                           </button>-->
+                        </div>
+                    </div>
+                </div>
+
+                <!--Tarjeta 2-->
+                <div class="grid-item">
+                    <div class="card">
+                        <img class="card-img" src="{% static 'core/img/fabian.jpg'%}" alt="Fabian" />
+                        <div class="card-content">
+                            <h1 id="cardHeader" class="card-header">Fabián Leonardo Moreno</h1>
+                            <p id="cardp" class="card-text">Profesor Departamento de Procesos Químicos y Biotecnológicos, Universidad de La Sabana. Ing. , PhD. Ingeniería Agroalimentaría y Biotecnología. PhD. Biociencias. Encargado de desarrollo de tecnologías en procesamiento de alimentos.
+                                <br><br><br><br><br><br><br></p>
+                            <!--<button class="card-btn">
+                               Visitar <span>&rarr;</span>
+                           </button>-->
+                        </div>
+                    </div>
+                </div>
+
+                <!--Tarjeta 3-->
+                <div class="grid-item">
+                    <div class="card">
+                        <img class="card-img" src="{% static 'core/img/andres.jpg'%}" alt="Andres" />
+                        <div class="card-content">
+                            <h1 id="cardHeader" class="card-header">Andrés Ortiz</h1>
+                            <p id="cardp" class="card-text"> Ingeniero de Producción Agroindustrial, con un executive MBA, Co Fundador y CEO de DRYCOL SAS por 14 años, participe de juntas directivas. Habilidades en negociación, implementación de estrategias empresariales, manejo de crisis,
+                                apertura de nuevos mercados y desarrollo de empresas sostenibles y rentables en el tiempo. Herramientas basadas en la innovación, la calidad, tecnología y siempre respetando y dándole mucho valor a las personas y al medio
+                                ambiente.
+                            </p>
+                            <!--<button class="card-btn">
+                               Visitar <span>&rarr;</span>
+                           </button>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--QUIENES SOMOS ------------------------------------------------------------------------------------------------------------------------------>
+    <fieldset class="about_Field">
+        <section class="quienes_Somos">
+            <div class="quienesSomos">
+                <div class="in-flex_QS">
+                    <p3>QUIENES<br>SOMOS</p3>
+                </div>
+                <div class="in-flex_QS">
+                    <p class="paboutifab">Somos una empresa que desarrolla aditivos alimentarios funcionales encapsulados, estabilizados y formulados especificamente para las aplicaciones de los productos de su compañía, que permita a su empresa declarar claims de valor para
+                        su cliente cada vez más interesado en consumir alimentos que le entreguen bienestar. Se ofrecen productos funcionales con trazabilidad nacional comprobada que diferencian sus alimentos. Empresa que crea productos funcionales científicamente
+                        comprobados, de origen natural para aportar a la alimentación mundial. Materias primas innovadoras que generan valor y funcionalidad a sus productos sin incrementar su costo de manera representativa.</p>
+                </div>
+            </div>
+        </section>
+    </fieldset>
+    <!--MISION Y VISION-->
+    <br>
+    <section class="mision_Vision">
+        <div class="in-flex_MV">
+            <p3 class="titulo_MV">MISIÓN</p3>
+            <p class="paboutifab">INNFood es una empresa dedicada a la bio-producción de alimentos funcionales, los cuales generan impacto positivo en la salud de sus consumidores y una mayor funcionalidad en el uso de los mismos. InnFood busca satisfacer tanto las expectativas
+                de sus clientes como las propias mediante el desarrollo de soluciones a la medida.</p>
+        </div>
+        <hr width="6" size="390" id="hrab">
+        <div class="in-flex_MV">
+            <p3 class="titulo_MV">VISIÓN</p3>
+            <p class="paboutifab">Para 2030 INNFood será una compañía reconocida por su innovación y liderazgo en productos 100% confiables con presencia en grandes industrias alimentarias colombianas. Con una infraestructura propia, InnFood marcará el cambio en la producción
+                de alimentos desarrollados desde el área de investigación de la Universidad de La Sabana, con el fin de impactar positivamente en sus consumidores; generando de esta manera una autonomía propia, así como la efectividad y calidad en sus
+                productos.
+            </p>
+        </div>
+    </section>
+    <br>
+    <!--SPIN-OFF------------------------------------------------------------------------------------------------------------------------------>
+    <fieldset class="about_Field">
+        <section class="spin_Off">
+            <div class="in-flex_SO">
+                <p3 class="titulo_SO">PRIMER SPIN-OFF DE LA UNIVERSIDAD DE LA SABANA</p3>
+                <p2 class="paboutifab2">Universidad de La Sabana y Drycol S.A.S. trabajan en la transferencia y apropiación de nuevas tecnologías y productos innovadores</p2>
+                <br><br>
+                <img class="imgSpin" src="{% static 'core/img/drycol.png'%}" alt="" width="300px" height="100px">
+            </div>
+
+            <div class="in-flex_SO">
+                <p class="paboutifab">INNFood es la marca mixta, oficialmente registrada ante la Superintendencia de Industria y Comercio, que nombrará a la primera spin-off de la Universidad de La Sabana, como resultado del empaquetamiento de siete de sus patentes generadas
+                    en la Facultad de Ingeniería, por el Grupo de Investigación de Procesos Agroindustriales.</p><br>
+                <p class="paboutifab">Para la creación de este proyecto Drycol S.A.S. participa como aliado aportando infraestructura (equipo de secado) y experiencia comercial en un proyecto beneficiado actualmente por Minciencias y con recursos de regalías de la Gobernación
+                    de Cundinamarca. “Este proyecto busca principalmente demostrar que los productos obtenidos en el laboratorio y que harán parte de la nueva empresa, se pueden escalar a nivel industrial y además desarrollar lo necesario para la creación
+                    de la empresa: desde habilidades emprendedoras, plan de comercialización, desarrollo de marca, plan financiero, organización jurídica, entre otras”, afirma Claudia Marcela Vanegas, Jefe de Transferencia de Resultados de Investigación
+                    de la Universidad de La Sabana.<br><br> Tomado de:</p><br>
+                <a class="refDrycol" href="https://www.inalde.edu.co/noticias/general/la-sabana-drycol-trabajan-en-transferencia-y-nuevas-tecnologias-productos-innovadores/">Universidad de La Sabana y Drycol S.A.S. 
+                                trabajan en la transferencia y apropiación de nuevas tecnologías y productos innovadores</a>
+            </div>
+            <div class="in-flex_SO">
+                <br><br><br><br><br><br>
+                <img class="imgSpin" src="{% static 'core/img/spinoff.jpg'%}" alt="" width="450px" height="450px">
+            </div>
+        </section>
+    </fieldset>
+</main>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends 'core/base.html' %} {% block title %}Contáctanos{% endblock %}{% load static %}{% block head %}
+
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'core/css/estiloContactUs.css' %}">
+</head>
+{% endblock %} {% block content %}
+<div class="contact-section">
+    <h1>CONTÁCTANOS</h1>
+    <div class="border"></div>
+    <form class="contact-form" action="{% url 'contacto' %}" method="POST">
+        <br> {% csrf_token %} {{form}}
+        <button type="submit" class="contact-form-btn" onclick="">ENVIAR</button>
+    </form>
+</div>
+{% endblock %}

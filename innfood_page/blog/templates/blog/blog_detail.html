@@ -1,0 +1,57 @@
+{% extends 'core/base.html' %} {% block title %}Blog{% endblock %} {% load static %}{% load static %}{% block head %}
+
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'core/css/estiloEntradas.css' %}">
+</head>
+{% endblock %} {% block content %}{% for blog in blogs %}
+<!--Articulo-->
+<article id="details_container">
+    <main id="site-main">
+        <div id="background">
+            <section class="container">
+                <article class="post_container" id="post">
+                    <a href="{% url 'blog' %}" class="volver">Ver todos</a>
+                    <div class="headings">
+                        <div class="meta">
+                            <p class="estiloMedio">
+                                <i class="fas fa-user-circle" style="font-size: 150%;">&nbsp;&nbsp;</i>
+                                <span> {{blog.autor}}&nbsp;&nbsp;</span>
+                                <span> {{blog.created}} </span>
+                            </p>
+                        </div>
+
+                        <div class="title">
+                            <h2 class="tituloArticulo">{{blog.title}}</h2>
+                        </div>
+                        <div class="cuerpo">
+                            <div id="Iframe-Liason-Sheet" class="iframe-border center-block-horiz">
+                                <div class="responsive-wrapper responsive-wrapper-wxh-760x1200">
+                                    <iframe src="{{blog.link_formated}}" frameborder="0"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="articuloFooter">
+                            <hr style="color: grey;">
+                            <div class="iconosRedes">
+                                <p>
+                                    <span><i class="fab fa-facebook-f"id="iconoRRSS"></i></span>
+                                    <span><i class="fab fa-twitter"id="iconoRRSS"></i></span>
+                                    <span><i class="fab fa-linkedin-in" id="iconoRRSS"></i></span>
+                                    <span><i class="fas fa-link" id="iconoRRSS"></i></span>
+                                </p>
+                            </div>
+                            <hr style="color: grey;">
+                            <div class="infoViews">
+                                <p class="estiloViewsArticle">
+                                    <span><i class="fas fa-eye"></i> &nbsp;&nbsp; </span>
+                                </p>
+                                <i class="fas fa-heart" id="iconoCorazonArticle"></i>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </div>
+        </div>
+</article>
+<!--.Articulo-->{% endfor blog %}{% endblock %}
