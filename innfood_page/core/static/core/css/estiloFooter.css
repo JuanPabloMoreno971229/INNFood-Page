@@ -1,0 +1,159 @@
+body {
+    background: white;
+}
+
+fieldset {
+    border: 5px solid #008080;
+}
+
+.second p {
+    color: #008080;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: Bahnschrift;
+    text-align: center;
+}
+
+.second p:hover {
+    color: #f2ca4c;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: Bahnschrift;
+    text-align: center;
+}
+
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+#social {
+    margin: 20px 10px;
+    text-align: center;
+}
+
+.smGlobalBtn {
+    /* global button class */
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 2px 2px #999;
+    padding: 0px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 2em;
+    border-radius: 25px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+}
+
+
+/* linkedin button class*/
+
+.linkedBtn {
+    background: #008080;
+}
+
+.linkedBtn:before {
+    font-family: "FontAwesome";
+    content: "\f0e1";
+    /* add linkedin icon */
+}
+
+.linkedBtn:hover {
+    color: #f2ca4c;
+    background: #fff;
+}
+
+
+/* instagram button class*/
+
+.instagramBtn {
+    background: #008080;
+}
+
+.instagramBtn:before {
+    font-family: "FontAwesome";
+    content: "\f16d";
+    /* add instagram icon */
+}
+
+.instagramBtn:hover {
+    color: #f2ca4c;
+    background: #fff;
+}
+
+
+/* youtube button class*/
+
+.youtubeBtn {
+    background: #008080;
+}
+
+.youtubeBtn:before {
+    font-family: "FontAwesome";
+    content: "\f167";
+    /* add youtube icon */
+}
+
+.youtubeBtn:hover {
+    color: #f2ca4c;
+    background: #fff;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+td {
+    margin: auto;
+    width: 600px;
+}
+
+
+/*FOOTER*/
+
+.field_footer {
+    border: 5px solid #008080;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+}
+
+.in-flex_FO {
+    flex: 1;
+    min-width: 300px;
+    margin: 30px;
+}
+
+.in-flex_FO div {
+    flex: 2;
+    padding: 25px;
+    background-color: #fff;
+    margin: 20px;
+}
+
+.in-flex_FO p {
+    color: #008080;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: Bahnschrift;
+    text-align: center;
+}
+
+.in-flex_FO p:hover {
+    color: #f2ca4c;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: Bahnschrift;
+    text-align: center;
+}

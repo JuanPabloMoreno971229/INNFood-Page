@@ -1,0 +1,171 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Gill Sans MT';
+}
+
+/* Fondo */
+.contact-section{
+    background: url(../img/contact.jpg) no-repeat center;
+    background-size: cover;
+    padding: 60px 0;
+}
+
+/* Contáctanos */
+.contact-section h1{
+    text-align: center;
+    color: #008080;
+}
+
+/* Línea */
+.border{
+    width:100px;
+    height: 10px;
+    background: #34495e;
+    margin: 40px auto;
+}
+
+/* Form */
+.contact-form{
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+/* Form text */
+.contact-form-text{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 0;
+    background: #F2CA4C;
+    padding: 20px 40px;
+    outline: none;
+    color:#000;
+    transition: 0.5s;
+    font-family: Bahnschrift;
+}
+
+/* Form text animation */
+.contact-form-text:focus{
+    box-shadow: 0 0 10px 4px #008080 ;
+}
+
+/* No resize fon message */
+textarea.contact-form-text{
+    resize:none;
+    height: 120px;
+}
+
+/* Button */
+.contact-form-btn{
+    float: right;
+    border: 0;
+    background: #008080;
+    font-family: 'Gill Sans MT';
+    font-weight: bold;
+    color: #fff;
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/* Button animation */
+.contact-form-btn:hover{
+    float: right;
+    border: 0;
+    background: #fff;
+    font-family: 'Gill Sans MT';
+    color: #008080;
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/*Select*/
+
+.PQRS{
+    background-color: #F2CA4C;
+    height: 40px;
+}
+
+.PQRS:hover{
+    box-shadow: 0 0 10px 4px #008080;
+}
+
+.solicitud{
+    font-family: Bahnschrift;
+    font-size: 10px;
+    padding: 20px 40px;
+    outline: none;
+    color: #34495e;
+    transition: 0.5s;
+}
+
+.opciones{
+    font-size: 15px;
+    font-family:Bahnschrift;
+    color: #fff;
+    align-items: center;
+    background-color: #008080;
+    border: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+} 
+
+/*----------------------Dropdown menu ---------------*/
+select {
+    box-sizing: border-box;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    -ms-appearance:none;
+    appearance:none;
+    outline:0;
+    box-shadow:none;
+    border:0!important;
+    background: #F2CA4C;
+    background-image: none;
+    flex: 1;
+    padding: 0 .5em;
+    color:#34495e;
+    cursor:pointer;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+ }
+ select::-ms-expand {
+    display: none;
+ }
+
+ .select:hover{
+    box-shadow: 0 0 10px 4px #008080;
+ }
+ .select {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 3em;
+    line-height: 3;
+    background: #008080;
+    overflow: hidden;
+    border-radius: .25em;
+ }
+ .select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    background: #F2CA4C;
+    cursor:pointer;
+    pointer-events:none;
+    transition:.25s all ease;
+ }
+ .select:hover::after {
+    color: #23b499;
+ }
+

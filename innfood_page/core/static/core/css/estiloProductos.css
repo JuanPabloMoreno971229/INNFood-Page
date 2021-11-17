@@ -1,0 +1,142 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    background: #fff;
+    font-family: 'Gill Sans MT';
+    font-size: 18px;
+    text-align: justify;
+}
+
+.productos{
+    background-image: url(../img/fondo-product.png);
+}
+
+a{
+    text-decoration: none;
+}
+
+.product-container{
+    max-width: 1200px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.productCard-container{
+    margin: 20px;
+}
+
+.productCard-container a{
+    display: inline-block;
+}
+
+.productCard-container:hover figure{
+    -webkit-transform: perspective(600px) rotateY(180deg);
+    -ms-transform: perspective(600px) rotateY(180deg);
+    -o-transform: perspective(600px) rotateY(180deg);
+    transform: perspective(600px) rotateY(180deg);
+    
+    -webkit-box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.3);
+    box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.3);
+}
+
+.productCard-container:hover figure img{
+    filter: grayscale(100%);
+    background-color: #008080;
+   filter: grayscale(200%) brightness(30%);
+   opacity: 85%;
+}
+
+figure{
+    width: 400px;
+    height: 450px;
+    margin: 0;
+    position: relative;
+    transition: all ease 0.5s;
+    transform-style: preserve-3d;
+    transform: perspective(600px) rotateY(0deg);
+}
+
+figure .product-front,
+figure .product-back{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    transition: all ease 0.5s;
+}
+
+figure .product-front{
+    display: block;
+}
+
+figure .product-title{
+    position: absolute;
+    top: 0;
+    padding: 20px;
+    color: #fff;
+    backface-visibility: hidden;
+}
+
+figure .product-back{
+    position: absolute;
+    top: 0;
+    padding: 20px;
+    color: #fff;
+    transform: perspective(600px) rotateY(180deg);
+    backface-visibility: hidden;
+    overflow: auto;
+
+
+}
+figure .product_back .product-title-back{
+    color: #fff;
+    font-weight: normal;
+    margin-bottom: 20px;
+    font-family: Bahnschrift;
+    font-size: 24px;
+}
+
+figure .product-back hr{
+    height: 2px;
+    background: #fff;
+    border: none;
+    margin-bottom: 20px;
+    opacity: 0.5;
+}
+
+figure .product-back p{
+    font-family: Bahnschrift;
+    line-height: 25px;
+    font-size: 20px;
+    color: #F2CA4C;
+    text-align: justify;
+    font-weight: bold;
+}
+
+figure .product-back h2{
+    font-family: 'Gill Sans MT';
+    line-height: 22px;
+    font-size: 26px;
+    color: #008080;
+    text-align: justify;
+}
+
+@media screen and (max-width:992px) {
+    figure .product-back{
+        backface-visibility: visible;
+        transform: perspective(600px) rotateY(0deg);
+    }
+
+    .product-container:hover figure{
+        transform: perspective(600px) rotateY(0deg);
+    }
+} */

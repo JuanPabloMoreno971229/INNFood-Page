@@ -1,0 +1,239 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+ 
+ @font-face {
+     font-family: 'HETIKA';
+     src: url('../fonts/HETIKA.otf') format('OpenType');
+     font-style: normal;
+     font-weight: normal;
+ }
+ 
+ body {
+     font-family: 'bahnschrift', sans-serif;
+ }
+ 
+ html {
+     box-sizing: border-box;
+ }
+ /*Contenedor 1*/
+ 
+ .contenedor1ab {
+     display: flex;
+ }
+ 
+ #contaboutifab {
+     background-color: #fff;
+     height: 400px;
+     width: 767px;
+ }
+ 
+ #contaboutifab1 {
+     background-color: #fff;
+     height: 400px;
+     width: 767px;
+ }
+ 
+ #aboutifab {
+     font-family: 'Gill Sans MT';
+     font-weight: bold;
+     color: #008080;
+     font-size: 50px;
+     display: block;
+     width: 300px;
+     margin: 0;
+     text-align: center;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 0;
+     margin-bottom: 0;
+ }
+ 
+ #aboutifab1 {
+     font-family: 'Gill Sans MT';
+     color: #008080;
+     font-size: 50px;
+     font-weight: bold;
+     display: block;
+     width: 300px;
+     margin: 0;
+     text-align: center;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 0;
+     margin-bottom: 0;
+ }
+ 
+ #paboutifab {
+     width: 600px;
+     height: 150px;
+     color: #000;
+     font-size: 18px;
+     text-align: justify;
+     font-weight: bold;
+     margin-left: auto;
+     margin-right: auto;
+     margin-bottom: 5px;
+     line-height: 32px;
+ }
+ 
+ #aboutifbttab {
+     background-color: #F2CA4C;
+     font-family: 'Gill Sans MT';
+     font-weight: bold;
+     font-size: 20px;
+     color: #000;
+     width: 150px;
+     height: 40px;
+     cursor: pointer;
+     text-transform: uppercase;
+     border-radius: 20px;
+     margin-left: 383.5px;
+     box-shadow: 0 8px 32px rgba(242, 202, 76, .46);
+ }
+ 
+ #contiflogoab {
+     align-items: center;
+     width: 600px;
+     height: 300px;
+     margin-right: 5%;
+     margin-left: 5%;
+     animation: ease-in animat 1s;
+ }
+ 
+ #fsab {
+     border: 5px solid #fff;
+ }
+ 
+ #hrab {
+     background-color: #F2CA4C;
+ }
+ /*Animaciones ================================================================================*/
+ 
+ @keyframes animat {
+     0% {
+         transform: scale(0);
+     }
+     100% {
+         transform: scale(1);
+     }
+ }
+ 
+ #aboutifbtt:hover {
+     background-color: #fff;
+     color: #008080;
+     transition: background-color .5s;
+ }
+ 
+ #bttct4:hover {
+     background-color: #fff;
+     color: #008080;
+     transition: background-color .5s;
+ }
+ /*ESTILO QUIENES SOMOS Y SPINN-OFF*/
+ 
+ body {
+     background: white;
+ }
+ 
+ #pqs {
+     margin-top: 190px;
+ }
+ 
+ #quienesSomos {
+     background-image: url("./img/aboutEquipo4.png");
+     height: 450px;
+ }
+ 
+ fieldset {
+     border: 10px solid #008080;
+ }
+ 
+ @font-face {
+     font-family: 'HETIKA';
+     src: url('../fonts/HETIKA.otf') format('OpenType');
+     font-style: normal;
+     font-weight: normal;
+ }
+ 
+ #iconos p1 {
+     font-family: 'Gill Sans MT';
+     font-weight: bold;
+     color: #F2CA4C;
+     font-size: 30px;
+     display: block;
+     width: 400px;
+     margin: 0;
+     text-align: center;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 50px;
+     margin-bottom: 25px;
+ }
+ 
+ #iconos p2 {
+     font-family: 'Gill Sans MT';
+     font-weight: bold;
+     color: #008080;
+     font-size: 18px;
+     display: block;
+     width: 400px;
+     margin: 0;
+     text-align: center;
+     margin-left: auto;
+     margin-right: auto;
+ }
+ 
+ p3 {
+     font-family: 'Gill Sans MT';
+     font-weight: bold;
+     color: #008080;
+     font-size: 50px;
+     display: block;
+     width: 300px;
+     margin: 0;
+     text-align: right;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 50px;
+     margin-bottom: 25px;
+ }
+ 
+ #refDrycol {
+     color: #000;
+     cursor: pointer;
+     font-size: 18px;
+     font-weight: bold;
+     font-family: Bahnschrift;
+     text-align: center;
+     text-align: justify;
+     width: 650px;
+ }
+ 
+ img {
+     display: block;
+     margin: auto;
+ }
+ 
+ td {
+     margin: auto;
+     width: 600px;
+ }
+ /*TITULOS*/
+ 
+ p4 {
+     font-family: 'Gill Sans MT';
+     font-weight: bold;
+     color: #F2CA4C;
+     font-size: 60px;
+     display: block;
+     width: 600px;
+     margin: 0;
+     text-align: center;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 50px;
+     margin-bottom: 25px;
+ }

@@ -1,0 +1,296 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.main-container-about {
+    overflow: hidden;
+}
+
+body {
+    font-family: 'bahnschrift', sans-serif;
+    text-align: justify;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #fff;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+.home {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/*EQUIPO*/
+
+p4 {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Gill Sans MT';
+    font-weight: bold;
+    color: #F2CA4C;
+    font-size: 60px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    padding: 25px;
+    margin: 20px;
+}
+
+.in-flex {
+    flex: 1;
+    min-width: 300px;
+}
+
+.in-flex:first-child {
+    flex: 2;
+    padding: 25px;
+    margin: 20px;
+}
+
+.in-flex div {
+    padding: 25px;
+    background-color: #fff;
+    margin: 20px;
+    display: inline-block;
+    display: inline;
+}
+
+.paboutifab1 {
+    color: #000;
+    font-size: 18px;
+    text-align: justify;
+    font-weight: bold;
+    margin-left: 450px auto;
+    margin-right: 450px auto;
+    margin-bottom: 2px;
+    letter-spacing: 1px;
+}
+
+
+/*ESTILO TARJETAS*/
+
+@keyframes animat {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#aboutifbtt:hover {
+    background-color: #fff;
+    color: #008080;
+    transition: background-color .5s;
+}
+
+#bttct4:hover {
+    background-color: #fff;
+    color: #008080;
+    transition: background-color .5s;
+}
+
+
+/*ESTILO QUIENES SOMOS*/
+
+.about_Field {
+    border: 10px solid #008080;
+}
+
+.in-flex_QS {
+    flex: 1;
+    min-width: 300px;
+    margin: 30px;
+}
+
+.in-flex_QS div {
+    flex: 2;
+    padding: 25px;
+    margin: 20px;
+}
+
+.quienes_Somos {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #eeeeee;
+}
+
+.pqs {
+    margin-top: 190px;
+}
+
+p3 {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Gill Sans MT';
+    font-weight: bold;
+    color: #008080;
+    font-size: 60px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    padding: 25px;
+    margin: 20px;
+}
+
+
+/*MISION Y VISION*/
+
+.mision_Vision {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+}
+
+.in-flex_MV {
+    flex: 1;
+    min-width: 300px;
+    margin: 30px;
+}
+
+.in-flex_MV div {
+    flex: 2;
+    padding: 25px;
+    background-color: #fff;
+    margin: 20px;
+}
+
+#hrab {
+    background-color: #F2CA4C;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.in-flex_MV .titulo_MV {
+    text-align: center;
+}
+
+
+/*TEXTOS*/
+
+.paboutifab {
+    color: #000;
+    font-size: 18px;
+    text-align: justify;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+
+/*SPIN-OFF*/
+
+.spin_Off {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+}
+
+.in-flex_SO {
+    flex: 1;
+    min-width: 300px;
+    margin: 30px;
+}
+
+.in-flex_SO div {
+    flex: 2;
+    padding: 25px;
+    background-color: #fff;
+    margin: 20px;
+}
+
+.in-flex_SO .titulo_SO {
+    text-align: center;
+}
+
+.titulo_SO {
+    font-family: 'Gill Sans MT';
+    font-weight: bold;
+    color: #F2CA4C;
+    font-size: 30px;
+    display: flex;
+    width: 400px;
+    margin: 0;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 180px;
+    margin-bottom: 25px;
+}
+
+p2 {
+    font-family: 'Gill Sans MT';
+    font-weight: bold;
+    color: #008080;
+    font-size: 18px;
+    display: block;
+    width: 400px;
+    margin: 0;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.refDrycol {
+    color: #000;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Bahnschrift;
+    text-align: center;
+    text-align: justify;
+    width: 650px;
+}
+
+
+/*FOOTER*/
+
+.field_footer {
+    border: 5px solid #008080;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+}
+
+.in-flex_FO {
+    flex: 1;
+    min-width: 300px;
+    margin: 30px;
+}
+
+.in-flex_FO div {
+    flex: 2;
+    padding: 25px;
+    background-color: #fff;
+    margin: 20px;
+}
+
+.in-flex_FO p {
+    color: #008080;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: Bahnschrift;
+    text-align: center;
+}
+
+.in-flex_FO p:hover {
+    color: #f2ca4c;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: Bahnschrift;
+    text-align: center;
+}

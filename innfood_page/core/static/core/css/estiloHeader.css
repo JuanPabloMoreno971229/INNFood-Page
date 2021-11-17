@@ -1,0 +1,210 @@
+/*header {
+    background-color:white;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header #logoInnFoodHeader {
+	margin-left: 2%;
+    flex-wrap: wrap;
+}
+
+header #listaHeader {
+    display: inline-block;
+}
+
+header #barraNavegacionHeader {
+    margin-left: 12%;
+}
+
+header #opcionesHeader {
+    color: black;
+    display: block;
+    text-decoration: none;
+    font-family: Bahnschrift;
+    padding: 20px 10px;
+    line-height: normal;
+    font-size: 110%;
+    border-bottom: 5px solid rgb(242, 202, 72);
+}
+
+header #listaHeader:hover #opcionesHeader {
+    border-bottom: 5px solid rgb(0, 128, 128);
+}
+
+header #logoSabanaHeader{
+    margin-left: 8%;
+}
+
+header #enlaceLogoSabana {
+	border-bottom: none;
+}
+
+@media only screen and (max-width:1318){
+
+    header #barraNavegacionHeader {
+        width: 100%;
+    }
+
+    header #listaHeader {
+        display: block;
+    }
+}*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*Header*/
+
+header::before {
+    content: "";
+    display: block;
+    margin-bottom: 100px;
+}
+
+.contenedor_header {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+nav {
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid transparent;
+    box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, .2);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    transition: ease-in-out 0.5s;
+    background: #fff;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.nav .logo {
+    height: 100px;
+    margin-top: 10px;
+}
+
+.nav .logo img {
+    height: 100%;
+    vertical-align: baseline;
+}
+
+.enlaces-header {
+    font-weight: 300;
+    transition: ease-in-out 0.5s;
+}
+
+.nav .enlaces-header a {
+    color: #000;
+    text-decoration: none;
+    margin-left: 20px;
+    font-family: Bahnschrift;
+    font-size: 110%;
+    font-weight: 1000;
+    border-bottom: 5px solid rgb(242, 202, 72);
+}
+
+.enlaces-header a:hover {
+    border-bottom: 5px solid rgb(0, 128, 128);
+}
+
+.hamburger {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    z-index: 100;
+    cursor: pointer;
+    display: none;
+    transition: color 0.5s ease-in;
+    color: #008080;
+}
+
+.hamburger>i {
+    font-size: 50px;
+    line-height: 80px;
+}
+
+
+/*Responsive*/
+
+@media screen and (max-width:792px) {
+    nav {
+        height: 100px;
+    }
+    .nav {
+        height: 100px;
+        padding: 0 10px;
+    }
+    .nav .logo {
+        height: 80px;
+        margin-top: 10px;
+    }
+    .nav .enlaces-header a {
+        line-height: 50px;
+    }
+    .enlaces-header {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:600px) {
+    nav {
+        height: 100px;
+    }
+    .nav {
+        height: 100px;
+        padding: 0 10px;
+    }
+    .nav .logo {
+        height: 80px;
+        margin-top: 10px;
+    }
+    .nav .enlaces-header a {
+        line-height: 50px;
+    }
+    .enlaces-header {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .enlaces-header {
+        position: fixed;
+        background-color: #008080;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        clip-path: circle(0% at 0 0);
+    }
+    .nav .menudos {
+        clip-path: circle(227.7% at 0 0);
+    }
+    .hamburger {
+        display: block;
+    }
+}
